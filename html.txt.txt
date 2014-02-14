@@ -1,0 +1,28 @@
+<div data-role="page" id="page1">
+<input type="text" placeholder="type something to store" id="inputString" />
+<h1 onclick="clearStorage()">clear the storage</h1>
+<h1 onclick="saveStatusLocally()">store here</h1>
+<h1 onclick="readStatus()">print in the first page</h1>
+<div id="write"></div>
+
+<div data-role="content">     
+          <p><a href="#ButtonEventPage" data-role="button">Click here to view the results in next page</a></p> 	               
+     </div>
+    <div class='liveExample'>   
+    <p>First name: <input data-bind='value: firstName' /></p> 
+    <p>Last name: <input data-bind='value: lastName' /></p> 
+    <h2>Hello everyone<span data-bind='text: fullName'> </span>!</h2>  
+</div>
+</div>
+
+
+<div data-role="page" id="ButtonEventPage">
+     <div data-role="header">
+     	  <a data-rel="back" data-icon="home">Home</a>
+          <h1>Page2</h1>
+     </div>
+    
+    <h1 onclick="clearStorage2()">clear the storage</h1>
+<h1 onclick="readStatus2()">print in the second page</h1>
+<div id="write2"></div>
+</div>
